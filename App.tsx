@@ -15,6 +15,7 @@ import { appTheme } from './src/styles/theme'
 import { Background } from './src/components/Background'
 
 import { SignIn } from './src/pages/SignIn'
+import { Home } from './src/pages/Home'
 
 const App = () => {
   const [fontsLoaded] = useFonts({
@@ -36,7 +37,7 @@ const App = () => {
           backgroundColor="transparent"
           translucent
         />
-        <SignIn />
+        <Home />
       </ThemeProvider>
     </Background>
   )
