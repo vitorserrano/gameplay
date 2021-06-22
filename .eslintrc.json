@@ -27,6 +27,7 @@
     "rules": {
         "react/prop-types": "off",
         "no-use-before-define": "off",
-        "@typescript-eslint/explicit-module-boundary-types": "off"
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "camelcase": "off"
     }
 }
