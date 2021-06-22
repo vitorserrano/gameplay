@@ -3,14 +3,14 @@ import styled from 'styled-components/native'
 export const StyledStatusBar = styled.StatusBar.attrs(({ theme }) => ({
   barStyle: 'light-content',
   translucent: true,
-  backgroundColor: theme.colors.background,
+  backgroundColor: theme.colors.secondary100,
 }))``
 
 export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.secondary100};
 `
 
 export const Illustration = styled.Image.attrs({
@@ -29,6 +29,8 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.heading};
   text-align: center;
   font-size: 40px;
+  font-family: ${({ theme }) => theme.fonts.title700};
+  line-height: 40px;
   margin-bottom: 16px;
 `
 
@@ -36,5 +38,7 @@ export const Subtitle = styled.Text`
   color: ${({ theme }) => theme.colors.heading};
   text-align: center;
   font-size: 15px;
+  font-family: ${({ theme }) => theme.fonts.title500};
+  line-height: 25px;
   margin-bottom: 64px;
 `
