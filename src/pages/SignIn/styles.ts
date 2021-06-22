@@ -1,16 +1,9 @@
 import styled from 'styled-components/native'
 
-export const StyledStatusBar = styled.StatusBar.attrs(({ theme }) => ({
-  barStyle: 'light-content',
-  translucent: true,
-  backgroundColor: theme.colors.secondary100,
-}))``
-
 export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.secondary100};
 `
 
 export const Illustration = styled.Image.attrs({

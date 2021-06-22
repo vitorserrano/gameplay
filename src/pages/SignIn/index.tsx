@@ -1,22 +1,13 @@
 import React from 'react'
 
 import { ButtonIcon } from '../../components/ButtonIcon'
-
-import {
-  Container,
-  StyledStatusBar,
-  Illustration,
-  Content,
-  Title,
-  Subtitle,
-} from './styles'
+import { Container, Illustration, Content, Title, Subtitle } from './styles'
 
 import IllustrationImg from '../../assets/illustration.png'
 
 export const SignIn = () => {
   return (
     <Container>
-      <StyledStatusBar />
       <Illustration source={IllustrationImg} />
 
       <Content>

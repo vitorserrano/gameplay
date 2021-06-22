@@ -1,4 +1,5 @@
 import React from 'react'
+import { StatusBar } from 'react-native'
 
 import { useFonts } from 'expo-font'
 import { Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter'
@@ -11,6 +12,7 @@ import AppLoading from 'expo-app-loading'
 
 import { ThemeProvider } from 'styled-components'
 import { appTheme } from './src/styles/theme'
+import { Background } from './src/components/Background'
 
 import { SignIn } from './src/pages/SignIn'
 
@@ -27,9 +29,16 @@ const App = () => {
   }
 
   return (
-    <ThemeProvider theme={appTheme}>
-      <SignIn />
-    </ThemeProvider>
+    <Background>
+      <ThemeProvider theme={appTheme}>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor="transparent"
+          translucent
+        />
+        <SignIn />
+      </ThemeProvider>
+    </Background>
   )
 }
 
