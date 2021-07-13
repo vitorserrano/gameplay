@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { Avatar } from '../Avatar'
+
 import { Wrapper, Container, User, Greeting, Username, Message } from './styles'
 
 export const Profile = () => {
@@ -9,7 +11,7 @@ export const Profile = () => {
 
       <Container>
         <User>
-          <Greeting>Olá, </Greeting>
+          <Greeting>Olá,</Greeting>
           <Username>Vitor</Username>
         </User>
 
