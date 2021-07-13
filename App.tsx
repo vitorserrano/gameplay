@@ -14,8 +14,7 @@ import { ThemeProvider } from 'styled-components'
 import { appTheme } from './src/styles/theme'
 import { Background } from './src/components/Background'
 
-import { SignIn } from './src/pages/SignIn'
-import { Home } from './src/pages/Home'
+import { Routes } from './src/routes'
 
 const App = () => {
   const [fontsLoaded] = useFonts({
@@ -30,16 +29,17 @@ const App = () => {
   }
 
   return (
-    <Background>
-      <ThemeProvider theme={appTheme}>
-        <StatusBar
-          barStyle="light-content"
-          backgroundColor="transparent"
-          translucent
-        />
-        <Home />
-      </ThemeProvider>
-    </Background>
+    <ThemeProvider theme={appTheme}>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="transparent"
+        translucent
+      />
+
+      <Background>
+        <Routes />
+      </Background>
+    </ThemeProvider>
   )
 }
 
